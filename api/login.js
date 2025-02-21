@@ -17,7 +17,7 @@ export default function handler(req, res) {
     response_type: "code",
     client_id: CLIENT_ID,
     redirect_uri: REDIRECT_URI,
-    scope: "channel:read",
+    scope: "channel:read user:read",
     code_challenge: challenge,
     code_challenge_method: "S256",
     state,
